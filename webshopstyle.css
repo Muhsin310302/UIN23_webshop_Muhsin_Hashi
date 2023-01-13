@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fasthand&family=Rubik:wght@400;600;700&display=swap');
 :root{
     --red: #da291c;
     --yellow: #ffd700;
@@ -12,10 +13,11 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+
 
 body{
     background-color: var(--yellow);
-    font-family:'Rubik' sans-serif;
+    font-family:'Rubik', sans-serif;
     font-size: var(--rootsize);
 }
+
