@@ -14,11 +14,20 @@
             <img src="images/LD_logo.svg" alt="LEGO-DUDES">
         </a>
 
-       <figure id="cart">
-        <span class="label">2</span>
+       <figure id="cart" onclick="toggleCart()">
+        <span class="label">0</span>
         <img src="images/legocart.svg" alt="Handlekurv">
        </figure>
     </header>
+    <section id="cart-view" class="hidden">
+        <h3>Din handlevogn</h3>
+        <ul>
+            <li>
+                Du har ingen varer i handlevognen
+            </li>
+        </ul>
+        <p>Total kr. <span id="total">0</span>,-</p>
+    </section>
         <nav>
             <a href="city.html">City</a>
             <a class = "active" href="ninjago.html">Ninjago</a>
@@ -33,15 +42,15 @@
                 <a href="ninjago.html">Ninjago</a>
                 <h3>Dragon zane</h3>
                 <span class="price">kr. 89,-</span>
-                <button>legg i handlekurv</button>
+                <button onclick="addToCart('Dragon Zane', 89)">legg i handlekurv</button>
             </article>
 
             <article class="product-card">
                 <img src="images/PROD_lil_ninja.webp" alt="produkt bilde av zane">
                 <a href="ninjago.html">Ninjago</a>
                 <h3>Lil'Ninja</h3>
-                <span class="price">kr. 89,-</span>
-                <button>legg i handlekurv</button>
+                <span class="price">kr. 99,-</span>
+                <button onclick="addToCart('Lil ninja', 99)">legg i handlekurv</button>
             </article>
 
             <article class="product-card">
@@ -49,7 +58,7 @@
                 <a href="ninjago.html">Ninjago</a>
                 <h3>Mester Wu</h3>
                 <span class="price">kr. 109,-</span>
-                <button>legg i handlekurv</button>
+                <button onclick="addToCart('Mester Wu', 109 )">legg i handlekurv</button>
             </article>
 
             <article class="product-card">
